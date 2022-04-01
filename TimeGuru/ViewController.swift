@@ -12,13 +12,13 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var monthLabel: UILabel!
     
-    var selectedDate = Date()
     var totalSquares = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         setCellsView()
+        setMonthView()
         self.collectionView.reloadData()
     }
     

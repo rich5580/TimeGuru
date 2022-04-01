@@ -50,4 +50,30 @@ class CalendarHelper {
         let components = cal.dateComponents([.weekday], from: date)
         return components.weekday! - 1
     }
+    
+    func addDays(date: Date, days: Int) -> Date {
+        return cal.date(byAdding: .day, value: days, to: date)!
+    }
+    
+    func sundayForDate(date: Date) -> Date {
+        var current = date
+        let oneWeekAgo = addDays(date: current, days: -7)
+        
+        while(current > oneWeekAgo)
+        {
+            let currentWeekDay = cal.dateComponents([.weekday], from: current).weekday
+            if(currentWeekDay == 1)
+            {
+                return current
+            }
+            current = addDays(date: current, days: -1)
+        }
+        return current
+    }
+    
+    func timeString(date: Date) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "HH:mm"
+        return dateFormatter.string(from: date)
+    }
 }

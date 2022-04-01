@@ -16,6 +16,10 @@
 		3A99416127F6386500027C67 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A99416027F6386500027C67 /* CalendarCell.swift */; };
 		3A99416327F63D6500027C67 /* CalendarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A99416227F63D6500027C67 /* CalendarHelper.swift */; };
 		3A99416527F642FA00027C67 /* StartingTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A99416427F642FA00027C67 /* StartingTabBar.swift */; };
+		3AA14FB627F7784B00B1E07B /* WeeklyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA14FB527F7784B00B1E07B /* WeeklyViewController.swift */; };
+		3AA14FB827F786BC00B1E07B /* EditEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA14FB727F786BC00B1E07B /* EditEventViewController.swift */; };
+		3AA14FBA27F786CB00B1E07B /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA14FB927F786CB00B1E07B /* EventCell.swift */; };
+		3AA14FBC27F7885500B1E07B /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA14FBB27F7885500B1E07B /* Event.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		3A99416027F6386500027C67 /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
 		3A99416227F63D6500027C67 /* CalendarHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarHelper.swift; sourceTree = "<group>"; };
 		3A99416427F642FA00027C67 /* StartingTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartingTabBar.swift; sourceTree = "<group>"; };
+		3AA14FB527F7784B00B1E07B /* WeeklyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyViewController.swift; sourceTree = "<group>"; };
+		3AA14FB727F786BC00B1E07B /* EditEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEventViewController.swift; sourceTree = "<group>"; };
+		3AA14FB927F786CB00B1E07B /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
+		3AA14FBB27F7885500B1E07B /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,9 +74,13 @@
 				3A99414E27F62E8D00027C67 /* SceneDelegate.swift */,
 				3A99416427F642FA00027C67 /* StartingTabBar.swift */,
 				3A99415027F62E8D00027C67 /* ViewController.swift */,
+				3AA14FB527F7784B00B1E07B /* WeeklyViewController.swift */,
+				3AA14FB727F786BC00B1E07B /* EditEventViewController.swift */,
+				3AA14FB927F786CB00B1E07B /* EventCell.swift */,
 				3A99416027F6386500027C67 /* CalendarCell.swift */,
 				3A99416227F63D6500027C67 /* CalendarHelper.swift */,
 				3A99415227F62E8D00027C67 /* Main.storyboard */,
+				3AA14FBB27F7885500B1E07B /* Event.swift */,
 				3A99415527F62E9200027C67 /* Assets.xcassets */,
 				3A99415727F62E9200027C67 /* LaunchScreen.storyboard */,
 				3A99415A27F62E9200027C67 /* Info.plist */,
@@ -147,12 +159,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AA14FB627F7784B00B1E07B /* WeeklyViewController.swift in Sources */,
+				3AA14FBA27F786CB00B1E07B /* EventCell.swift in Sources */,
 				3A99416327F63D6500027C67 /* CalendarHelper.swift in Sources */,
 				3A99415127F62E8D00027C67 /* ViewController.swift in Sources */,
+				3AA14FBC27F7885500B1E07B /* Event.swift in Sources */,
 				3A99414D27F62E8D00027C67 /* AppDelegate.swift in Sources */,
 				3A99416527F642FA00027C67 /* StartingTabBar.swift in Sources */,
 				3A99414F27F62E8D00027C67 /* SceneDelegate.swift in Sources */,
 				3A99416127F6386500027C67 /* CalendarCell.swift in Sources */,
+				3AA14FB827F786BC00B1E07B /* EditEventViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
