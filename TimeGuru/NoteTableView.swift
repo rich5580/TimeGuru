@@ -11,23 +11,20 @@ import CoreData
 var noteList = [Note]()
 
 class NoteTableView: UITableViewController {
-    
     var firstLoad = true
     
     func nonDeletedNotes() -> [Note] {
-        var noDeletedNoteList = [Note]()
-        
+        var noDeleteNoteList = [Note]()
         for note in noteList {
-            if (note.deletedDate == nil) {
-                noDeletedNoteList.append(note)
+            if(note.deletedDate == nil) {
+                noDeleteNoteList.append(note)
             }
         }
-        
-        return noDeletedNoteList
+        return noDeleteNoteList
     }
     
     override func viewDidLoad() {
-        if (firstLoad) {
+        if(firstLoad) {
             firstLoad = false
             let appDelegate = UIApplication.shared.delegate as! AppDelegate
             let context: NSManagedObjectContext = appDelegate.persistentContainer.viewContext
@@ -38,23 +35,25 @@ class NoteTableView: UITableViewController {
                     let note = result as! Note
                     noteList.append(note)
                 }
-            } catch {
+            }catch {
                 print("Fetch Failed")
             }
         }
     }
     
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         let noteCell = tableView.dequeueReusableCell(withIdentifier: "noteCellID", for: indexPath) as! NoteCell
         
         let thisNote: Note!
         thisNote = nonDeletedNotes()[indexPath.row]
+        
         noteCell.cellTitle.text = thisNote.title
         noteCell.cellDesc.text = thisNote.desc
         
         return noteCell
     }
+    
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return nonDeletedNotes().count
@@ -69,16 +68,18 @@ class NoteTableView: UITableViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "editNote") {
+        if(segue.identifier == "editNote") {
             let indexPath = tableView.indexPathForSelectedRow!
-            let noteDetial = segue.destination as? NoteDetailViewController
             
-            let selectedNote: Note!
+            let noteDetail = segue.destination as? NoteDetailVC
+            
+            let selectedNote : Note!
             selectedNote = nonDeletedNotes()[indexPath.row]
-            noteDetial!.selectedNote = selectedNote
+            noteDetail!.selectedNote = selectedNote
             
             tableView.deselectRow(at: indexPath, animated: true)
         }
     }
+    
     
 }

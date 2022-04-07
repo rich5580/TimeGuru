@@ -10,8 +10,8 @@
 		3A4DF47427FDF03100B23C2A /* TimeGuru.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A4DF47227FDF03100B23C2A /* TimeGuru.xcdatamodeld */; };
 		3A4DF49927FDF68800B23C2A /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4DF49827FDF68800B23C2A /* NoteCell.swift */; };
 		3A4DF49B27FDF69900B23C2A /* NoteTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4DF49A27FDF69900B23C2A /* NoteTableView.swift */; };
-		3A4DF49D27FDF72700B23C2A /* NoteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4DF49C27FDF72700B23C2A /* NoteDetailViewController.swift */; };
 		3A4DF49F27FDFA8800B23C2A /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4DF49E27FDFA8700B23C2A /* Note.swift */; };
+		3A4DF4A127FF4FE400B23C2A /* NoteDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4DF4A027FF4FE400B23C2A /* NoteDetailVC.swift */; };
 		3A99414D27F62E8D00027C67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A99414C27F62E8D00027C67 /* AppDelegate.swift */; };
 		3A99414F27F62E8D00027C67 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A99414E27F62E8D00027C67 /* SceneDelegate.swift */; };
 		3A99415127F62E8D00027C67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A99415027F62E8D00027C67 /* ViewController.swift */; };
@@ -35,8 +35,8 @@
 		3A4DF47327FDF03100B23C2A /* TimeGuru.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TimeGuru.xcdatamodel; sourceTree = "<group>"; };
 		3A4DF49827FDF68800B23C2A /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
 		3A4DF49A27FDF69900B23C2A /* NoteTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTableView.swift; sourceTree = "<group>"; };
-		3A4DF49C27FDF72700B23C2A /* NoteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailViewController.swift; sourceTree = "<group>"; };
 		3A4DF49E27FDFA8700B23C2A /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		3A4DF4A027FF4FE400B23C2A /* NoteDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteDetailVC.swift; sourceTree = "<group>"; };
 		3A99414927F62E8D00027C67 /* TimeGuru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeGuru.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A99414C27F62E8D00027C67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A99414E27F62E8D00027C67 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,13 +93,13 @@
 				3A99416427F642FA00027C67 /* StartingTabBar.swift */,
 				3A99415027F62E8D00027C67 /* ViewController.swift */,
 				3AA14FB527F7784B00B1E07B /* WeeklyViewController.swift */,
+				3A4DF4A027FF4FE400B23C2A /* NoteDetailVC.swift */,
 				3AA14FB727F786BC00B1E07B /* EditEventViewController.swift */,
 				3AA14FB927F786CB00B1E07B /* EventCell.swift */,
 				3A99416027F6386500027C67 /* CalendarCell.swift */,
 				3AA14FBD27F7A83400B1E07B /* DailyCell.swift */,
 				3AA14FBF27F7A84600B1E07B /* DailyViewController.swift */,
 				3A99416227F63D6500027C67 /* CalendarHelper.swift */,
-				3A4DF49C27FDF72700B23C2A /* NoteDetailViewController.swift */,
 				3A4DF49827FDF68800B23C2A /* NoteCell.swift */,
 				3A4DF49A27FDF69900B23C2A /* NoteTableView.swift */,
 				3AA14FBB27F7885500B1E07B /* Event.swift */,
@@ -196,11 +196,11 @@
 				3AA14FBC27F7885500B1E07B /* Event.swift in Sources */,
 				3A4DF49B27FDF69900B23C2A /* NoteTableView.swift in Sources */,
 				3A99414D27F62E8D00027C67 /* AppDelegate.swift in Sources */,
-				3A4DF49D27FDF72700B23C2A /* NoteDetailViewController.swift in Sources */,
 				3AA14FC227F7ACC100B1E07B /* CalendarDay.swift in Sources */,
 				3AA14FBE27F7A83400B1E07B /* DailyCell.swift in Sources */,
 				3A99416527F642FA00027C67 /* StartingTabBar.swift in Sources */,
 				4603DD9927FE8C2A007E6F10 /* WeatherViewController.swift in Sources */,
+				3A4DF4A127FF4FE400B23C2A /* NoteDetailVC.swift in Sources */,
 				3A99414F27F62E8D00027C67 /* SceneDelegate.swift in Sources */,
 				3A4DF49927FDF68800B23C2A /* NoteCell.swift in Sources */,
 				3A99416127F6386500027C67 /* CalendarCell.swift in Sources */,

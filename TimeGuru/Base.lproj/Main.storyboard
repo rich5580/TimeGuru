@@ -12,7 +12,7 @@
         <!--Note Details-->
         <scene sceneID="aGc-c7-ZmN">
             <objects>
-                <viewController id="C6W-jN-dXk" customClass="NoteDetailViewController" customModule="TimeGuru" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="C6W-jN-dXk" customClass="NoteDetailVC" customModule="TimeGuru" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="40R-kW-ixB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -58,8 +58,7 @@
                                     <color key="baseForegroundColor" systemColor="systemRedColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="deleteBtn:" destination="C6W-jN-dXk" eventType="touchUpInside" id="r9g-Kg-jJ6"/>
-                                    <action selector="deleteNote:" destination="C6W-jN-dXk" eventType="touchUpInside" id="ZWh-LD-MaX"/>
+                                    <action selector="DeleteNote:" destination="C6W-jN-dXk" eventType="touchUpInside" id="uko-mT-8tS"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -88,17 +87,17 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Save"/>
                                 <connections>
-                                    <action selector="saveBtn:" destination="C6W-jN-dXk" eventType="touchUpInside" id="JnI-Bd-9l2"/>
+                                    <action selector="saveAction:" destination="C6W-jN-dXk" eventType="touchUpInside" id="bTA-l6-Q9T"/>
                                 </connections>
                             </button>
                             <connections>
-                                <action selector="saveBtn:" destination="C6W-jN-dXk" id="RPd-mw-77O"/>
+                                <action selector="saveAction:" destination="C6W-jN-dXk" id="9RQ-cC-RMB"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="descText" destination="zbX-Q9-rxu" id="UcB-aH-aJA"/>
-                        <outlet property="titleText" destination="ODs-yv-byk" id="EXb-n5-g3X"/>
+                        <outlet property="descText" destination="zbX-Q9-rxu" id="uV2-dT-ewl"/>
+                        <outlet property="titleText" destination="ODs-yv-byk" id="xrg-TY-a2F"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lcn-Vj-RZB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
