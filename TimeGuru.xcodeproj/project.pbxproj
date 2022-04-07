@@ -12,11 +12,13 @@
 		3A4DF49B27FDF69900B23C2A /* NoteTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4DF49A27FDF69900B23C2A /* NoteTableView.swift */; };
 		3A4DF49F27FDFA8800B23C2A /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4DF49E27FDFA8700B23C2A /* Note.swift */; };
 		3A4DF4A127FF4FE400B23C2A /* NoteDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4DF4A027FF4FE400B23C2A /* NoteDetailVC.swift */; };
+		3A4DF4B127FF84F000B23C2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A4DF4A327FF84F000B23C2A /* Assets.xcassets */; };
+		3A4DF4B227FF84F000B23C2A /* appstore.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A4DF4A427FF84F000B23C2A /* appstore.png */; };
+		3A4DF4B827FF84F000B23C2A /* playstore.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A4DF4B027FF84F000B23C2A /* playstore.png */; };
 		3A99414D27F62E8D00027C67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A99414C27F62E8D00027C67 /* AppDelegate.swift */; };
 		3A99414F27F62E8D00027C67 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A99414E27F62E8D00027C67 /* SceneDelegate.swift */; };
 		3A99415127F62E8D00027C67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A99415027F62E8D00027C67 /* ViewController.swift */; };
 		3A99415427F62E8D00027C67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A99415227F62E8D00027C67 /* Main.storyboard */; };
-		3A99415627F62E9200027C67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A99415527F62E9200027C67 /* Assets.xcassets */; };
 		3A99415927F62E9200027C67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A99415727F62E9200027C67 /* LaunchScreen.storyboard */; };
 		3A99416127F6386500027C67 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A99416027F6386500027C67 /* CalendarCell.swift */; };
 		3A99416327F63D6500027C67 /* CalendarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A99416227F63D6500027C67 /* CalendarHelper.swift */; };
@@ -37,12 +39,14 @@
 		3A4DF49A27FDF69900B23C2A /* NoteTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTableView.swift; sourceTree = "<group>"; };
 		3A4DF49E27FDFA8700B23C2A /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		3A4DF4A027FF4FE400B23C2A /* NoteDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteDetailVC.swift; sourceTree = "<group>"; };
+		3A4DF4A327FF84F000B23C2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3A4DF4A427FF84F000B23C2A /* appstore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appstore.png; sourceTree = "<group>"; };
+		3A4DF4B027FF84F000B23C2A /* playstore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playstore.png; sourceTree = "<group>"; };
 		3A99414927F62E8D00027C67 /* TimeGuru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeGuru.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A99414C27F62E8D00027C67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A99414E27F62E8D00027C67 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3A99415027F62E8D00027C67 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3A99415327F62E8D00027C67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3A99415527F62E9200027C67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A99415827F62E9200027C67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A99415A27F62E9200027C67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A99416027F6386500027C67 /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
@@ -69,6 +73,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A4DF4A227FF84F000B23C2A /* AppIcons */ = {
+			isa = PBXGroup;
+			children = (
+				3A4DF4A327FF84F000B23C2A /* Assets.xcassets */,
+				3A4DF4A427FF84F000B23C2A /* appstore.png */,
+				3A4DF4B027FF84F000B23C2A /* playstore.png */,
+			);
+			path = AppIcons;
+			sourceTree = "<group>";
+		};
 		3A99414027F62E8D00027C67 = {
 			isa = PBXGroup;
 			children = (
@@ -107,7 +121,7 @@
 				3A4DF49E27FDFA8700B23C2A /* Note.swift */,
 				3A99415227F62E8D00027C67 /* Main.storyboard */,
 				4603DD9827FE8C2A007E6F10 /* WeatherViewController.swift */,
-				3A99415527F62E9200027C67 /* Assets.xcassets */,
+				3A4DF4A227FF84F000B23C2A /* AppIcons */,
 				3A99415727F62E9200027C67 /* LaunchScreen.storyboard */,
 				3A99415A27F62E9200027C67 /* Info.plist */,
 				3A4DF47227FDF03100B23C2A /* TimeGuru.xcdatamodeld */,
@@ -173,9 +187,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A4DF4B227FF84F000B23C2A /* appstore.png in Resources */,
 				3A99415927F62E9200027C67 /* LaunchScreen.storyboard in Resources */,
-				3A99415627F62E9200027C67 /* Assets.xcassets in Resources */,
+				3A4DF4B127FF84F000B23C2A /* Assets.xcassets in Resources */,
 				3A99415427F62E8D00027C67 /* Main.storyboard in Resources */,
+				3A4DF4B827FF84F000B23C2A /* playstore.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
