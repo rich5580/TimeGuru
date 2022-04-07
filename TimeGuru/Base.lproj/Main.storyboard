@@ -358,7 +358,7 @@
         <!--Weather Page-->
         <scene sceneID="Iep-AL-26F">
             <objects>
-                <viewController title="Weather Page" id="VUC-GG-4wx" sceneMemberID="viewController">
+                <viewController title="Weather Page" id="VUC-GG-4wx" customClass="WeatherViewController" customModule="TimeGuru" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Pk8-Eq-BHY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
