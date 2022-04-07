@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Note View Controller-->
+        <!--Note Details-->
         <scene sceneID="aGc-c7-ZmN">
             <objects>
-                <viewController id="C6W-jN-dXk" customClass="NoteViewController" customModule="TimeGuru" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="C6W-jN-dXk" customClass="NoteDetailViewController" customModule="TimeGuru" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="40R-kW-ixB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -44,32 +44,55 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c03-XQ-AaD">
+                                <rect key="frame" x="167.5" y="431" width="79" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Delete">
+                                            <attributes>
+                                                <font key="NSFont" size="18" name="Helvetica-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" systemColor="systemRedColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="deleteBtn:" destination="C6W-jN-dXk" eventType="touchUpInside" id="r9g-Kg-jJ6"/>
+                                    <action selector="deleteNote:" destination="C6W-jN-dXk" eventType="touchUpInside" id="ZWh-LD-MaX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4mU-5L-lED"/>
                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                         <constraints>
                             <constraint firstItem="zbX-Q9-rxu" firstAttribute="centerX" secondItem="efl-ga-Ii3" secondAttribute="centerX" id="D3B-gM-3T2"/>
                             <constraint firstItem="JH8-Qs-JCF" firstAttribute="centerX" secondItem="4mU-5L-lED" secondAttribute="centerX" id="D5d-ys-n9W"/>
+                            <constraint firstItem="c03-XQ-AaD" firstAttribute="top" secondItem="zbX-Q9-rxu" secondAttribute="bottom" constant="44" id="I5s-LL-FoF"/>
                             <constraint firstItem="JH8-Qs-JCF" firstAttribute="top" secondItem="4mU-5L-lED" secondAttribute="top" constant="50" id="Lt8-b1-0W2"/>
                             <constraint firstItem="efl-ga-Ii3" firstAttribute="centerX" secondItem="ODs-yv-byk" secondAttribute="centerX" id="Mcu-tp-YC6"/>
                             <constraint firstItem="ODs-yv-byk" firstAttribute="width" secondItem="40R-kW-ixB" secondAttribute="width" multiplier="0.75" id="Ndd-jC-Sa9"/>
                             <constraint firstItem="zbX-Q9-rxu" firstAttribute="top" secondItem="efl-ga-Ii3" secondAttribute="bottom" constant="10" id="VUb-N1-ffk"/>
                             <constraint firstItem="ODs-yv-byk" firstAttribute="top" secondItem="JH8-Qs-JCF" secondAttribute="bottom" constant="5" id="VjC-4n-w1W"/>
+                            <constraint firstItem="c03-XQ-AaD" firstAttribute="centerX" secondItem="zbX-Q9-rxu" secondAttribute="centerX" id="rke-rN-Ck1"/>
                             <constraint firstItem="zbX-Q9-rxu" firstAttribute="width" secondItem="ODs-yv-byk" secondAttribute="width" id="tgZ-2U-uCq"/>
                             <constraint firstItem="efl-ga-Ii3" firstAttribute="top" secondItem="ODs-yv-byk" secondAttribute="bottom" constant="30" id="wv2-s0-Zhu"/>
                             <constraint firstItem="ODs-yv-byk" firstAttribute="centerX" secondItem="JH8-Qs-JCF" secondAttribute="centerX" id="zzp-lm-8H9"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="yC0-5e-kUe">
+                    <navigationItem key="navigationItem" title="Note Details" id="yC0-5e-kUe">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="ByW-AD-Csa">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="wUf-o1-Y7r">
                                 <rect key="frame" x="302" y="5" width="92" height="34.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Save"/>
+                                <connections>
+                                    <action selector="saveBtn:" destination="C6W-jN-dXk" eventType="touchUpInside" id="JnI-Bd-9l2"/>
+                                </connections>
                             </button>
                             <connections>
-                                <action selector="saveBtn:" destination="C6W-jN-dXk" id="AEw-mw-doc"/>
+                                <action selector="saveBtn:" destination="C6W-jN-dXk" id="RPd-mw-77O"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -80,7 +103,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lcn-Vj-RZB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2907" y="1004"/>
+            <point key="canvasLocation" x="-2907.2463768115945" y="1003.7946428571428"/>
         </scene>
         <!--Notes Page-->
         <scene sceneID="c9l-xA-i6U">
@@ -139,10 +162,13 @@
                     <navigationItem key="navigationItem" title="Notes" id="7pH-jM-zrh">
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="BkU-K2-eX6">
                             <connections>
-                                <segue destination="C6W-jN-dXk" kind="show" id="9v7-VZ-zrO"/>
+                                <segue destination="C6W-jN-dXk" kind="show" identifier="newNote" id="9v7-VZ-zrO"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="C6W-jN-dXk" kind="show" identifier="editNote" id="gyz-Fv-wWC"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zQy-bm-Rer" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -818,6 +844,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="kfr-d6-PGr"/>
+        <segue reference="9v7-VZ-zrO"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrowshape.turn.up.left.fill" catalog="system" width="128" height="106"/>
@@ -833,6 +860,9 @@
         </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

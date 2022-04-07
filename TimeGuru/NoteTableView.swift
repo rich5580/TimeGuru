@@ -6,17 +6,50 @@
 //
 
 import UIKit
+import CoreData
 
 var noteList = [Note]()
 
 class NoteTableView: UITableViewController {
     
+    var firstLoad = true
+    
+    func nonDeletedNotes() -> [Note] {
+        var noDeletedNoteList = [Note]()
+        
+        for note in noteList {
+            if (note.deletedDate == nil) {
+                noDeletedNoteList.append(note)
+            }
+        }
+        
+        return noDeletedNoteList
+    }
+    
+    override func viewDidLoad() {
+        if (firstLoad) {
+            firstLoad = false
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            let context: NSManagedObjectContext = appDelegate.persistentContainer.viewContext
+            let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Note")
+            do {
+                let results:NSArray = try context.fetch(request) as NSArray
+                for result in results {
+                    let note = result as! Note
+                    noteList.append(note)
+                }
+            } catch {
+                print("Fetch Failed")
+            }
+        }
+    }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let noteCell = tableView.dequeueReusableCell(withIdentifier: "noteCellID ", for: indexPath) as! NoteCell
+        let noteCell = tableView.dequeueReusableCell(withIdentifier: "noteCellID", for: indexPath) as! NoteCell
         
         let thisNote: Note!
-        thisNote = noteList[indexPath.row]
+        thisNote = nonDeletedNotes()[indexPath.row]
         noteCell.cellTitle.text = thisNote.title
         noteCell.cellDesc.text = thisNote.desc
         
@@ -24,11 +57,28 @@ class NoteTableView: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return noteList.count
+        return nonDeletedNotes().count
     }
     
     override func viewDidAppear(_ animated: Bool) {
         tableView.reloadData()
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "editNote", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "editNote") {
+            let indexPath = tableView.indexPathForSelectedRow!
+            let noteDetial = segue.destination as? NoteDetailViewController
+            
+            let selectedNote: Note!
+            selectedNote = nonDeletedNotes()[indexPath.row]
+            noteDetial!.selectedNote = selectedNote
+            
+            tableView.deselectRow(at: indexPath, animated: true)
+        }
     }
     
 }
