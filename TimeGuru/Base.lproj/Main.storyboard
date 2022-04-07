@@ -373,7 +373,7 @@
                     <connections>
                         <segue destination="KLJ-x9-mVS" kind="relationship" relationship="viewControllers" id="yoP-Y8-RV4"/>
                         <segue destination="Cp6-1Y-J7e" kind="relationship" relationship="viewControllers" id="0f7-iA-ZkD"/>
-                        <segue destination="VUC-GG-4wx" kind="relationship" relationship="viewControllers" id="DXH-Lp-bjR"/>
+                        <segue destination="AQu-lk-0Le" kind="relationship" relationship="viewControllers" id="teb-wa-LyR"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jWW-eu-rKX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -389,25 +389,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Waterloo, ON" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e4D-jr-agL">
-                                <rect key="frame" x="114.5" y="99" width="185.5" height="36"/>
+                                <rect key="frame" x="114.5" y="143" width="185.5" height="36"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="30"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saturday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2EN-v6-jyF">
-                                <rect key="frame" x="168.5" y="138" width="77" height="24"/>
+                                <rect key="frame" x="168.5" y="182" width="77" height="24"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cloudy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4wC-ij-3a4">
-                                <rect key="frame" x="177" y="442" width="60.5" height="24"/>
+                                <rect key="frame" x="177" y="486" width="60.5" height="24"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7l6-UK-Ag3">
-                                <rect key="frame" x="107" y="222" width="200" height="200"/>
+                                <rect key="frame" x="107" y="266" width="200" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="EbU-VA-YLk"/>
                                     <constraint firstAttribute="height" constant="200" id="y8j-Qg-3EW"/>
@@ -428,8 +428,26 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Weather" image="sun.min.fill" catalog="system" id="CO8-EW-7Oh"/>
+                    <navigationItem key="navigationItem" id="KTN-Bd-8cL"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LU9-jZ-sMU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-175" y="1004"/>
+        </scene>
+        <!--Weather-->
+        <scene sceneID="FvE-FE-Eh1">
+            <objects>
+                <navigationController id="AQu-lk-0Le" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Weather" image="sun.min.fill" catalog="system" id="ZCB-Ca-i2C"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4iO-9t-Efd">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="VUC-GG-4wx" kind="relationship" relationship="rootViewController" id="QJ4-bk-TC0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Wy-PU-LoD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-175" y="321"/>
         </scene>
@@ -858,7 +876,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="au1-51-IoU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-280" y="1691"/>
+            <point key="canvasLocation" x="-175" y="2044"/>
         </scene>
         <!--Notes-->
         <scene sceneID="4mB-iw-wbx">

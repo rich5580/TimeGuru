@@ -119,10 +119,10 @@
 				3AA14FBB27F7885500B1E07B /* Event.swift */,
 				3AA14FC127F7ACC100B1E07B /* CalendarDay.swift */,
 				3A4DF49E27FDFA8700B23C2A /* Note.swift */,
-				3A99415227F62E8D00027C67 /* Main.storyboard */,
 				4603DD9827FE8C2A007E6F10 /* WeatherViewController.swift */,
-				3A4DF4A227FF84F000B23C2A /* AppIcons */,
+				3A99415227F62E8D00027C67 /* Main.storyboard */,
 				3A99415727F62E9200027C67 /* LaunchScreen.storyboard */,
+				3A4DF4A227FF84F000B23C2A /* AppIcons */,
 				3A99415A27F62E9200027C67 /* Info.plist */,
 				3A4DF47227FDF03100B23C2A /* TimeGuru.xcdatamodeld */,
 			);
