@@ -84,32 +84,32 @@ class WeatherViewController: UIViewController {
                         self.nightBackground()
                         
                     }
-//                    if (imgPicker == "Clear" && timeCheck == "day"){
-//                        self.weatherImg.image = UIImage(named: "sun.png")
-//                    }
-//                    else if (imgPicker == "Clouds" && timeCheck == "day"){
-//                        
-//                        self.weatherImg.image = UIImage(named: "cloud.png")
-//                        print("HERRRRRREEE")
-//                    }
-//                    else if (imgPicker == "Clear"){
-//                        self.weatherImg.image = UIImage(named: "moon.png")
-//                    }
-//                    else if (imgPicker == "Clouds"){
-//                        self.weatherImg.image = UIImage(named: "night.png")
-//                    }
-//                    else if (imgPicker == "Snow"){
-//                        self.weatherImg.image = UIImage(named: "snow.png")
-//                    }
-//                    else if (imgPicker == "Rain" || imgPicker == "Drizzle"){
-//                        self.weatherImg.image = UIImage(named: "rain.png")
-//                    }
-//                    else if (imgPicker == "Thunderstorm"){
-//                        self.weatherImg.image = UIImage(named: "storm.png")
-//                    }
-//                    else {
-//                        self.weatherImg.image = UIImage(named: "tornado.png")
-//                    }
+                    if (imgPicker == "Clear" && timeCheck == "day"){
+                        self.weatherImg.image = UIImage(named: "sun.png")
+                    }
+                    else if (imgPicker == "Clouds" && timeCheck == "day"){
+                        
+                        self.weatherImg.image = UIImage(named: "cloud.png")
+                        print("HERRRRRREEE")
+                    }
+                    else if (imgPicker == "Clear"){
+                        self.weatherImg.image = UIImage(named: "moon.png")
+                    }
+                    else if (imgPicker == "Clouds"){
+                        self.weatherImg.image = UIImage(named: "night.png")
+                    }
+                    else if (imgPicker == "Snow"){
+                        self.weatherImg.image = UIImage(named: "snow.png")
+                    }
+                    else if (imgPicker == "Rain" || imgPicker == "Drizzle"){
+                        self.weatherImg.image = UIImage(named: "rain.png")
+                    }
+                    else if (imgPicker == "Thunderstorm"){
+                        self.weatherImg.image = UIImage(named: "storm.png")
+                    }
+                    else {
+                        self.weatherImg.image = UIImage(named: "tornado.png")
+                    }
                     
                     
                     print("Description:")

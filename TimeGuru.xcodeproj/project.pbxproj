@@ -31,7 +31,6 @@
 		3AA14FC027F7A84600B1E07B /* DailyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA14FBF27F7A84600B1E07B /* DailyViewController.swift */; };
 		3AA14FC227F7ACC100B1E07B /* CalendarDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA14FC127F7ACC100B1E07B /* CalendarDay.swift */; };
 		4603DD9927FE8C2A007E6F10 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4603DD9827FE8C2A007E6F10 /* WeatherViewController.swift */; };
-		4603DD9B2800B1A1007E6F10 /* project images in Resources */ = {isa = PBXBuildFile; fileRef = 4603DD9A2800B1A1007E6F10 /* project images */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,7 +60,6 @@
 		3AA14FBF27F7A84600B1E07B /* DailyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyViewController.swift; sourceTree = "<group>"; };
 		3AA14FC127F7ACC100B1E07B /* CalendarDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarDay.swift; sourceTree = "<group>"; };
 		4603DD9827FE8C2A007E6F10 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
-		4603DD9A2800B1A1007E6F10 /* project images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "project images"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,7 +122,6 @@
 				4603DD9827FE8C2A007E6F10 /* WeatherViewController.swift */,
 				3A99415227F62E8D00027C67 /* Main.storyboard */,
 				3A99415727F62E9200027C67 /* LaunchScreen.storyboard */,
-				4603DD9A2800B1A1007E6F10 /* project images */,
 				3A4DF4A227FF84F000B23C2A /* AppIcons */,
 				3A99415A27F62E9200027C67 /* Info.plist */,
 				3A4DF47227FDF03100B23C2A /* TimeGuru.xcdatamodeld */,
@@ -195,7 +192,6 @@
 				3A4DF4B127FF84F000B23C2A /* Assets.xcassets in Resources */,
 				3A99415427F62E8D00027C67 /* Main.storyboard in Resources */,
 				3A4DF4B827FF84F000B23C2A /* playstore.png in Resources */,
-				4603DD9B2800B1A1007E6F10 /* project images in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
