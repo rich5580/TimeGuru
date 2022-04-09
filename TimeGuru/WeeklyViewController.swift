@@ -64,7 +64,7 @@ class WeeklyViewController: UIViewController, UICollectionViewDelegate, UICollec
         cell.dayOfMonth.text = String(CalendarHelper().dayOfMonth(date: totalSquares[indexPath.item]))
         
         if (totalSquares[indexPath.item] == selectedDate) {
-            cell.backgroundColor = UIColor.systemGreen
+            cell.backgroundColor = UIColor.systemBlue
         } else {
             cell.backgroundColor = UIColor.white
         }
@@ -110,7 +110,7 @@ class WeeklyViewController: UIViewController, UICollectionViewDelegate, UICollec
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellID") as! EventCell
         let event = Event().eventsForDate(date: selectedDate)[indexPath.row]
-        cell.eventLabel.text = event.name + " " + CalendarHelper().timeString(date: event.date)
+        cell.eventLabel.text = CalendarHelper().timeString(date: event.date) + " - " + event.name 
         return cell
     }
     
