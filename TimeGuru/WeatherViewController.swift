@@ -64,7 +64,7 @@ class WeatherViewController: UIViewController {
                     print("Temp:")
                     let temp = self.calculateCelsius(fahrenheit: weatherN.temp)
                     print(temp)
-                    self.tempLbl.text = temp
+                    self.tempLbl.text = temp + "°C"
                     let WeatherSun = weatherData.sys
                     print("Current sun value:")
                     print(weatherData.dt)
