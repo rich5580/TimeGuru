@@ -74,7 +74,8 @@ class WeeklyViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == UITableViewCell.EditingStyle.delete {
-            eventsList.remove(at: indexPath.row)
+            let event = Event().eventsForDate(date: selectedDate)[indexPath.row]
+            eventsList.remove(at: event.id)
             tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.automatic)
         }
     }
