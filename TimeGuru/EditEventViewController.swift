@@ -19,12 +19,24 @@ class EditEventViewController: UIViewController {
     }
     
     @IBAction func saveBtn(_ sender: Any) {
-        let newEvent = Event()
-        newEvent.id = eventsList.count
-        newEvent.name = labelName.text
-        newEvent.date = eventPicker.date
-        eventsList.append(newEvent)
-        navigationController?.popViewController(animated: true)
+        
+        if (labelName.text != "") {
+            let newEvent = Event()
+            newEvent.id = eventsList.count
+            newEvent.name = labelName.text
+            newEvent.date = eventPicker.date
+            eventsList.append(newEvent)
+            navigationController?.popViewController(animated: true)
+        } else {
+            alertPopUp(title: "Label is a Required Field")
+        }
+       
+    }
+    
+    func alertPopUp (title: String) {
+        let alert = UIAlertController(title: title, message: "", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Dismiss", style: .default))
+        self.present(alert, animated: true, completion: nil)
     }
     
     

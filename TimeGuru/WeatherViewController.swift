@@ -9,7 +9,7 @@ import UIKit
 
 let apiKey = "8741296de0b3a921b78384ba552a3995"
 // Website where images were created, attribute
-let imageRef = "https://www.flaticon.com/free-icons"
+// "https://www.flaticon.com/free-icons"
 
 var JSONData: Data?
 
