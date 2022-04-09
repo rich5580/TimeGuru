@@ -10,7 +10,7 @@ import Foundation
 var eventsList = [Event]()
 
 class Event {
-    var id: Int!
+    var id: String!
     var name: String!
     var date: Date!
     

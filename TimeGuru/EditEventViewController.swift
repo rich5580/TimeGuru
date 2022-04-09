@@ -11,10 +11,8 @@ class EditEventViewController: UIViewController {
     
     @IBOutlet weak var labelName: UITextField!
     @IBOutlet weak var eventPicker: UIDatePicker!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         eventPicker.date = selectedDate
     }
     
@@ -22,7 +20,7 @@ class EditEventViewController: UIViewController {
         
         if (labelName.text != "") {
             let newEvent = Event()
-            newEvent.id = eventsList.count
+            newEvent.id = UUID().uuidString
             newEvent.name = labelName.text
             newEvent.date = eventPicker.date
             eventsList.append(newEvent)
